@@ -19,8 +19,7 @@ class Two_Sum:
             diff = target - num
             if diff in diff_index:
                 return [diff_index[diff], i]
-            diff_index[diff] = i
+            diff_index[num] = i
 
         # returning empty array for validate return type
         return []
-
